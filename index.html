@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apnastyle.in</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script>
+ function authenticate() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Add your authentication logic here
+      
+      if (username === 'akash' && password === 'xxxx') {
+        window.location.href = 'index.html';
+      } else {
+        alert('Invalid username and password');
+      }
+    }
+
+   </script>
+ </head>
+<body>
+    <div  id="interface">
+<div id="user111">
+        <h1 id="login1">login </h1>
+       <form> 
+      
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <div class="user-icon">
+                <i class="material-symbols-outlined">
+                    person
+                </i>
+            </div>
+        </div>
+        
+       
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+      
+
+       
+        
+        <i class="material-symbols-outlined">
+            lock
+        </i>
+    
+    </div>
+        <button   id="button1" type="button" onclick="authenticate()">login
+        </button>
+    </form> 
+        <br>
+        <a href="#">forgot password</a>
+        <br>
+        <br><br>
+
+        <div>you dont have any account?
+            <a href="register">Register</a>
+        </div>
+</div>
+</body>
+</html>
+
+
+<style>
+
+body{
+
+    background-image: url(Apna\ style.in.png);
+    background-position: center;
+   background-size: cover;
+    background-repeat:no-repeat;
+
+ 
+}
+
+    #interface{
+border: 3px;
+border-style: solid;
+border-color: blue;
+width: 7cm;
+height: 6cm;
+border-radius: 3%;
+margin-top: 4cm;
+margin-bottom: 3cm;
+margin-left: 16cm;
+padding-left: 2cm;
+padding-bottom: 5cm;
+padding-right: 2cm;
+background-color: transparent;
+backdrop-filter: blur(2px);
+}
+
+#login1{
+    font-family: cursive;
+    font-size: xx-large;
+ display: flex;
+ justify-content: center;
+}
+
+#username{
+    display: flex;
+ justify-content: center;
+ height: 1cm;
+ width: 6.8cm;
+ border-radius: 20px;
+background-color: transparent;
+border-color: blue   ;
+}
+ 
+
+#password{
+    display: flex;
+ justify-content: center;
+ height: 1cm;
+ width: 6.8cm;
+ border-radius: 20px;
+background-color: transparent;
+border-color: blue   ;
+}
+ 
+
+
+.material-symbols-outlined {
+
+    
+    margin-left: 6cm;
+
+}
+
+#button1{
+
+    display: flex;
+ justify-content: center;
+ height: 1.1cm;
+ width: 6.8cm;
+ border-radius: 20px;
+ padding-top: 9px;
+}
+
+
+
+
+
+</style>  
+
