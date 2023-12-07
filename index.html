@@ -23,46 +23,39 @@
    </script>
  </head>
 <body>
-    <div  id="interface">
-<div id="user111">
-        <h1 id="login1">login </h1>
-       <form> 
-      
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <div class="user-icon">
-                <i class="material-symbols-outlined">
-                    person
-                </i>
+    <div  class="interface">
+        <div id="user111">
+                <h1 id="login1">login </h1>
+            <div class="form">
+                <form> 
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <div class="user-icon">
+                            <i class="material-symbols-outlined">
+                                person
+                            </i>
+                        </div>
+                    </div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <i class="material-symbols-outlined">
+                        lock
+                    </i>
+                
+                    <button   class="button1" type="button" onclick="authenticate()">login
+                    </button>
+                    <div class="pass">
+                        <a href="#">forgot password</a>\
+                    </div>
+                    <div class="sign">
+                        you dont have any account?
+                        <a href="register">Register</a>
+                    </div>
+                </form>
             </div>
         </div>
-        
-       
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-      
-
-       
-        
-        <i class="material-symbols-outlined">
-            lock
-        </i>
-    
     </div>
-        <button   id="button1" type="button" onclick="authenticate()">login
-        </button>
-    </form> 
-        <br>
-        <a href="#">forgot password</a>
-        <br>
-        <br><br>
-
-        <div>you dont have any account?
-            <a href="register">Register</a>
-        </div>
-</div>
 </body>
 </html>
 
@@ -71,81 +64,88 @@
 
 body{
 
-    background-image: url(Apna style.in.png);
+    background-image: url(Apna\ style.in.png);
     background-position: center;
-   background-size: cover;
+    background-size: cover;
     background-repeat:no-repeat;
-
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-    #interface{
-border: 3px;
-border-style: solid;
-border-color: blue;
-width: 7cm;
-height: 6cm;
-border-radius: 3%;
-margin-top: 4cm;
-margin-bottom: 3cm;
-margin-left: 16cm;
-padding-left: 2cm;
-padding-bottom: 5cm;
-padding-right: 2cm;
-background-color: transparent;
-backdrop-filter: blur(2px);
+.pass{
+    text-align: center;
+    padding: 20px;
+}
+
+.pass a:hover{
+    color: orange;
+}
+
+.sign a:hover{
+    color: orange;
+}
+
+.interface{
+    border: 3px;
+    border-style: solid;
+    border-color: blue;
+    width: 7cm;
+    height: 6cm;
+    border-radius: 3%;
+    margin-top: 4cm;
+    margin-bottom: 3cm;
+    padding-top: 10px;
+    padding-left: 2cm;
+    padding-bottom: 5cm;
+    padding-right: 2cm;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
 }
 
 #login1{
     font-family: cursive;
     font-size: xx-large;
- display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #username{
     display: flex;
- justify-content: center;
- height: 1cm;
- width: 6.8cm;
- border-radius: 20px;
-background-color: transparent;
-border-color: blue   ;
+    justify-content: center;
+    height: 1cm;
+    width: 6.8cm;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: blue   ;
 }
- 
 
 #password{
     display: flex;
- justify-content: center;
- height: 1cm;
- width: 6.8cm;
- border-radius: 20px;
-background-color: transparent;
-border-color: blue   ;
+    justify-content: center;
+    height: 1cm;
+    width: 6.8cm;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: blue   ;
 }
  
-
-
 .material-symbols-outlined {
-
-    
     margin-left: 6cm;
-
 }
 
-#button1{
+.button1{
 
     display: flex;
- justify-content: center;
- height: 1.1cm;
- width: 6.8cm;
- border-radius: 20px;
- padding-top: 9px;
+    justify-content: center;
+    height: 1.1cm;
+    width: 6.8cm;
+    border-radius: 20px;
+    padding-top: 9px;
 }
 
-
-
-
-
+.button1:hover{
+    background-color: rgba(6, 188, 6, 0.805);
+    color: rgb(255, 0, 255);
+}
 </style>  
-
